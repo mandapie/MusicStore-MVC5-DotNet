@@ -16,7 +16,7 @@ Part 2 - 6:
 * have different UI but the everything are essentially the same.
 
 Part 7 (Membership and Authorization):
-* follow "User Role Management Tutorial"
+* use "User Role Management Tutorial" as a reference
 
 Part 8 - 10: 
 * TBA. Haven't gotten this far.
