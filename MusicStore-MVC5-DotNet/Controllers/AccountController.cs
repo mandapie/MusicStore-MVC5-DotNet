@@ -79,7 +79,7 @@ namespace MusicStore_MVC5_DotNet.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    MigrateShoppingCart(model.Email); // add shopping cart to logged in account
+                    MapCartSessionIDToUser(model.Email);
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -159,7 +159,7 @@ namespace MusicStore_MVC5_DotNet.Controllers
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     await UserManager.AddToRoleAsync(user.Id, "User"); // set User role
 
-                    MigrateShoppingCart(model.Email); // add shopping cart to registered in account
+                    MapCartSessionIDToUser(model.Email);
 
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
@@ -428,12 +428,21 @@ namespace MusicStore_MVC5_DotNet.Controllers
         }
 
         #region shopping cart
+        /// <summary>
+        /// set cart session ID to username to get the appropriate cart information of logged in user
+        /// </summary>
+        /// <param name="UserName"></param>
+        private void MapCartSessionIDToUser(string UserName)
+        {
+            Session[ShoppingCart.CartSessionKey] = UserName;
+        }
+
         private void MigrateShoppingCart(string UserName)
         {
             // Associate shopping cart items with logged-in user
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            cart.MigrateCart(UserName);
+            //cart.MigrateCart(UserName);
             Session[ShoppingCart.CartSessionKey] = UserName;
         }
         #endregion

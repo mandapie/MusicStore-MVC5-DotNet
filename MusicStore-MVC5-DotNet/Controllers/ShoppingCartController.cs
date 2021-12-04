@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MusicStore_MVC5_DotNet.Controllers
 {
+    [Authorize]
     public class ShoppingCartController : Controller
     {
         MusicStoreEntities storeDB = new MusicStoreEntities();
