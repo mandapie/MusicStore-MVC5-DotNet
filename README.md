@@ -21,6 +21,9 @@ Part 7 (Membership and Authorization):
 Part 8 - 10: 
 * have different UI but the everything are essentially the same. Will need to tweak css.
 
-Additional things you need to do on your own:
+Things not included in tutorial:
 * Log out.
 * Hide admin link if logged in user is not an "Admin".
+
+To be fixed:
+* Shopping cart is not tied to a specific account.
