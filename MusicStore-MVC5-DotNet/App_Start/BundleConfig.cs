@@ -20,10 +20,12 @@ namespace MusicStore_MVC5_DotNet
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Content/fontawesome-free-5.15.3-web/js/all.min.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/fontawesome-free-5.15.3-web/css/all.min.css",
                       "~/Content/site.css"));
         }
     }
