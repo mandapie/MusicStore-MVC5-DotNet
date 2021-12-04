@@ -15,7 +15,7 @@
     <li>
         @{Html.RenderAction("CartSummary", "ShoppingCart");}
     </li>
-    @if(User.Identity. == "Admin"){
+    @if(User.IsInRole("Admin")){
     <li>
         @Html.ActionLink("Admin", "Index", "StoreManager")
     </li>
