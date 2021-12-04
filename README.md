@@ -16,7 +16,14 @@ Part 2 - 6:
 * have different UI but the everything are essentially the same.
 
 Part 7 (Membership and Authorization):
-* follow "User Role Management Tutorial"
+* use "User Role Management Tutorial" as a reference
 
 Part 8 - 10: 
-* TBA. Haven't gotten this far.
+* have different UI but the everything are essentially the same. Will need to tweak css.
+
+Things not included in tutorial:
+* Log out.
+* Hide admin link if logged in user is not an "Admin".
+
+To be fixed:
+* Shopping cart is not tied to a specific account.
