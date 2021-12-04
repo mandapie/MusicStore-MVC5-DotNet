@@ -19,4 +19,4 @@ Part 7 (Membership and Authorization):
 * use "User Role Management Tutorial" as a reference
 
 Part 8 - 10: 
-* TBA. Haven't gotten this far.
+* have different UI but the everything are essentially the same. Will need to tweak css.
