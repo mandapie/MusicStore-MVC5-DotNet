@@ -4,7 +4,7 @@
 * Music Store Assets: <https://github.com/evilDave/MVC-Music-Store>
 * User Role Management Tutorial: <https://www.c-sharpcorner.com/UploadFile/asmabegam/Asp-Net-mvc-5-security-and-creating-user-role>
 
-## IMPORTENT DIFFERENCE between MS's tutorial and Visual Studio 2019 ##
+## IMPORTANT DIFFERENCE between MS's tutorial and Visual Studio 2019 ##
 
 Part 1 (Creating Project):
 * Create a `ASP.NET Web Application (.NET Framework)` project. Next.
@@ -16,14 +16,13 @@ Part 2 - 6:
 * have different UI but the everything are essentially the same.
 
 Part 7 (Membership and Authorization):
-* use "User Role Management Tutorial" as a reference
+* Use "User Role Management Tutorial" as a reference
 
 Part 8 - 10: 
-* have different UI but the everything are essentially the same. Will need to tweak css.
+* Have different UI but the everything are essentially the same.
+* Need to tweak css.
 
-Things not included in tutorial:
+## Issues/Not included in tutorial ##
 * Log out.
 * Hide admin link if logged in user is not an "Admin".
-
-To be fixed:
 * Shopping cart is not tied to a specific account.
